@@ -1,6 +1,6 @@
 # hipaa-server
 
-Scripts and documentation for building a HIPAA-aligned single-server WordPress host on AWS EC2 (RHEL 10). Built once on a real instance in October 2026; the before/after OpenSCAP results from that build are summarised in `evidence/SUMMARY.md`.
+Scripts and documentation for building a HIPAA-aligned single-server WordPress host on AWS EC2 (RHEL 10). Built once on a real instance in October 2026 and decommissioned with `aws/teardown.py` after the evidence was captured; the before/after OpenSCAP results from that build are summarised in `evidence/SUMMARY.md`.
 
 Result on the reference build: SCAP Security Guide HIPAA profile went from 36 pass / 121 fail to 153 pass / 4 fail, with the 4 written up as exceptions in `docs/COMPLIANCE.md`.
 
