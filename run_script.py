@@ -11,6 +11,9 @@ import paramiko
 
 STORE = os.environ.get("SERVERS_JSON", os.path.join(os.path.dirname(os.path.abspath(__file__)), "servers.json"))
 
+if len(sys.argv) < 3:
+    print(__doc__)
+    sys.exit(2)
 alias = sys.argv[1].lstrip("@")
 script = open(sys.argv[2], "rb").read().replace(b"\r\n", b"\n")
 timeout = int(sys.argv[3]) if len(sys.argv) > 3 else 1800
