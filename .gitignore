@@ -1,0 +1,6 @@
+.env
+*.pem
+*.csv
+evidence/*
+!evidence/SUMMARY.md
+servers.json
